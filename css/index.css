@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: ar-font;
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+
+body {
+    direction: rtl;
+    font-family: ar-font, sans-serif;
+}
+
+header video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header .overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+header .brand {
+    padding-top: 40px;
+}
+
+header .header-text {
+    padding-top: 190px;
+}
+
+header .header-text h1 {
+    color: #555555;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 40px;
+}
+
+header .header-text p {
+    color: #5d5d5d;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+header .header-buttons .btn {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 32px;
+    background-color: #7936b2;
+    padding: 22px 55px;
+    border-radius: 0;
+    margin-left: 15px;
+}
+
+header .header-buttons .btn:last-child {
+    background-color: transparent;
+    color: #7936b2;
+}
+
+header .product {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+header .product .product-img img {
+    width: 100%;
+}
+
+header .product .product-label img {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+header .product .product-label p {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+}
+
+header .product .product-label p span {
+    display: block;
+}
+
+section.features {
+    padding: 70px 0px;
+    background-color: #ffffff;
+
+}
+
+section.features .features-title h2 {
+    font-size: 36px;
+    color: #555555;
+    line-height: 32px;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+section.features .features-title h2::after {
+    content: "";
+    height: 2px;
+    width: 150px;
+    position: absolute;
+    background-color: #6a3093;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.features .features-media .d-flex {
+    padding: 70px 0px;
+    border-bottom: 3px solid #eeeeee;
+}
+
+section.features .features-media .d-flex:nth-child(even) {
+    direction: ltr;
+}
+
+section.features .features-media .d-flex img {
+    margin: 0px 80px;
+}
+
+section.features .features-media .d-flex h4 {
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #6a3093;
+    padding: 0px 25px;
+    margin-bottom: 50px;
+    border-right: 2px solid #6a3093;
+}
+
+section.features .features-media .d-flex:nth-child(even) h4 {
+    border-right: 0px;
+    border-left: 2px solid #6a3093;
+}
+
+section.features .features-media .d-flex p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #555555;
+}
+
+section.prices {
+    background-color: #f7f7f7;
+    padding: 50px 0px 60pxs;
+}
+
+section.prices .section-text h2 {
+    color: #555555;
+    font-size: 30px;
+}
+
+section.prices .plan-card {
+    border: 2px solid #efefef;
+    background-color: #ffffff;
+    padding: 15px 0px;
+    margin-top: 100px;
+    color: #a9a9ab;
+
+}
+
+section.prices .plan-card span.title {
+    font-size: 18px;
+    color: #a044ff;
+    font-weight: bold;
+}
+
+section.prices .plan-card h5 {
+    font-size: 48px;
+    margin: 30px auto;
+}
+
+section.prices .plan-card h5 span {
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+section.prices .plan-card ul {
+    padding: 0px;
+}
+
+section.prices .plan-card ul li {
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+section.prices .plan-card a.btn {
+    border: 2px solid #9933ff;
+    color: #9933ff;
+    background-color: #ffffff;
+    padding: 10px 40px;
+    border-radius: 0px;
+    font-weight: bold;
+    transition: 0.5s all ease;
+}
+
+section.prices .plan-card a.btn:hover {
+    background-color: #9933ff;
+    color: #ffffff;
+}
+
+section.prices .col-md-6:nth-child(3) .plan-card {
+    padding-top: 60px;
+    margin-top: 55px;
+}
+
+section.prices .col-md-6:nth-child(3) a.btn {
+    background-color: #9933ff;
+    color: #ffffff;
+}
+
+section.faq {
+    padding: 55px 0px;
+    background-color: #ffffff;
+}
+
+section.faq .faq-title h2 {
+    font-size: 30px;
+
+    color: #555555;
+    margin-bottom: 55px;
+}
+
+section.faq .accordion .accordion-item {
+    border: 1px solid #ebebeb;
+    margin: 15px 0px;
+    border-radius: 0px;
+}
+
+section.faq .accordion .accordion-item button {
+    font-size: 18px;
+    color: #555555;
+    font-weight: bold;
+}
+
+section.faq .accordion .accordion-item .accordion-body {
+    font-size: 15px;
+    color: #c9c9c9;
+    line-height: 20px;
+}
+
+section.faq .accordion .accordion-item .accordion-button:not(.collapsed) {
+    background-color: #ffffff;
+}
+
+section.faq .accordion .accordion-item .accordion-button:focus {
+    box-shadow: none;
+    border: 0px;
+}
+
+section.video {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+section.video .video-container video {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+
+}
+
+section.video .overlay {
+    background-color: rgba(129, 76, 175, 0.9);
+    position: absolute;
+    inset: 0;
+    min-height: 100%;
+    min-width: 100%;
+
+}
+
+section.video .overlay button {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    border: 0px;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 30px;
+
+}
+
+section.video .overlay button i {
+    display: block;
+    line-height: 90px;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin: 0 auto 45px;
+}
+
+section.contact {
+    background-color: #131313;
+    padding: 60px 0px 40px;
+}
+
+section.contact h4 {
+    font-size: 18px;
+    color: #758594;
+    line-height: 50px;
+}
+
+section.contact form input,
+section.contact form textarea {
+    display: block;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #242424;
+    font-size: 18px;
+    line-height: 35px;
+    border-radius: 0;
+    text-align: right;
+    width: 90%;
+    color: #aeadad;
+}
+
+section.contact form input::placeholder,
+section.contact form textarea::placeholder {
+    color: #aeadad;
+}
+
+section.contact form input:focus,
+section.contact form textarea:focus {
+    color: #aeadad;
+}
+
+section.contact form button {
+    background-color: #a044ff;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+section.contact form button i {
+    margin-right: 15px;
+}
+
+section.contact form .invalid-feedback {
+    margin-top: -15px;
+    margin-bottom: 15px;
+
+}
+
+section.contact .blog a.blog-link {
+    text-decoration: none;
+}
+
+section.contact .blog .d-flex {
+    margin-bottom: 25px;
+}
+
+section.contact .blog .d-flex h5 {
+    font-size: 18px;
+    color: #aeadad;
+    margin-bottom: 15px;
+}
+
+section.contact .blog .d-flex p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #737373;
+}
+
+footer {
+    background-color: #1d1d1d;
+    padding: 25px 0px;
+
+}
+
+footer .list-inline .list-inline-item a {
+    background-color: #758594;
+    color: #1d1d1d;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    transition: 0.5 all ease;
+
+}
+
+footer .list-inline .list-inline-item a:hover {
+    background-color: #1712a9;
+}
+
+footer .copyright p {
+    font-size: 15px;
+    text-align: left;
+    color: #737373;
+
+}
+
+@media (max-width:992px) {
+    header .header-text {
+        padding-top: 80px;
+    }
+}
+
+@media(max-width:768px) {
+    header .product {
+        margin-top: 100px;
+    }
+
+    header .product .product-label img {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    header .product .product-label p {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    section.features .features-media .d-flex {
+        flex-flow: column;
+        text-align: center;
+    }
+
+    section.features .features-media .d-flex img {
+        margin: 0px auto 50px;
+    }
+
+    section.features h4 {
+        border: none !important;
+    }
+
+    section.contact h4 {
+        margin-top: 25px;
+    }
+}
+
+@media(max-width: 576px) {
+    footer .list-inline {
+        text-align: center;
+    }
+
+    footer .copyright p {
+        text-align: center;
+    }
+}
